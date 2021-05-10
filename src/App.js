@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar';
+import { GlobalStyle } from './globalStyles';
+import NavbarTwo from './components/Navbar/NavbarTwo';
+import {SliderData} from './Data/SliderData';
+import  Slider from './components/Header/Slider';
+import About from './components/About/About';
+import Products from './components/Products/Products';
+import {ProductsData, ProductsDataTwo} from './Data/ProductsData';
+import Features from './components/Features/Features';
+import Footer from './components/Footer/Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar />
+      <NavbarTwo />
+      <Slider slides={SliderData} />
+      <About />
+      <Products heading='کافی شاپ انلاین' data={ProductsData} />
+      <Features />
+      <Products heading='فست فود انلاین' data={ProductsDataTwo} />
+      <Footer />
+    </Router>
   );
 }
 
