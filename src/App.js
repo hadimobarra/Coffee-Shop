@@ -21,9 +21,9 @@ function App() {
       <NavbarTwo />
       <Slider slides={SliderData} />
       <About />
-      <Products heading='کافی شاپ انلاین' data={ProductsData} />
+      <Products data={ProductsData} />
       <Features />
-      <Products heading='فست فود انلاین' data={ProductsDataTwo} />
+      <Products data={ProductsDataTwo} />
       <Footer />
     </Router>
   );

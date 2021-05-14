@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ProductsData, HeadData} from '../../Data/AboutData';
+import {HeadData, Icons} from '../../Data/AboutData';
 
 
 const ProductContainer = styled.div`
   position: relative;
   width: 100%;
+  margin: 4rem 0;
   top: 0;
   right: 0;
 `;
@@ -15,9 +16,7 @@ const ProductWrap = styled.div`
   height: 100%;
   top: 0;
   right: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   margin: 0 auto;
 `;
 
@@ -26,72 +25,53 @@ const ProductDesc = styled.div`
   margin-top: 2rem;
 
   h1 {
-      font-size: clamp(2rem, 8vw, 3rem);
-      font-weight: 500;
+      font-size: clamp(1rem, 5vw, 2.5rem);
+      font-weight: 240;
       color: #000;
   }
 
   p {
-      font-size: clamp( 1rem, 3vw, 1rem);
+      font-size: clamp( 0.9rem, 2vw, 1.2rem);
       font-weight: 200;
-      margin-top:1rem;
+      margin-top:2rem;
   }
 `;
 
-const Products = styled.div`
+const ProductIconsInfo = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 1.5rem;
-
   @media screen and (max-width: 768px) {
       width: 80%;
       display: block;
   }
 `;
 
-const Product = styled.div`
-  text-align: center;
-  margin: 20px;
-  
-  img {
-      height: 30vh;
-      width: 18vw;
-      border-radius: 50%;
-      max-width: 100%;
-      
-      &:hover {
-          transform: scale(1.1);
-          transition: 0.3s ;
-          cursor: pointer;
-      }
-  }
 
-  h3 {
-      margin-top: 1rem;
-      font-size: clamp(1rem, 8vw, 1.5rem);
-      font-weight: 200;
-      background:  rgba(255, 0, 0, 0.3);
-      border-radius: 50px;
+const Info = styled.div`
+  margin: 2rem 0;
+  transform: translate( 3rem, 0);
+  border-right: solid 2px #e1e1e1;
+  padding: 10px;
+  border-radius: 5px;
 
-      &:hover {
-          cursor: pointer;
-          color: brown;
-          background: yellow;
-          transition: 0.3s ease-in-out;
-          transform: scale(1);
-          color: #000;
-      }
+  h1 {
+      margin-top: 0rem;
+      font-size: 18px;
+      font-weight: bold;
   }
 
   p {
-      font-size: clamp(1rem, 8vw, 1rem);
-      color: rgba(0, 0, 0, 0.5);
       margin-top: 1rem;
-      margin: 1rem ;
+      font-size: 14px;
+      color: #212932;
+  }
+
+  &:hover {
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 0 15px 0 gray;
   }
 `;
-
 
 const About = () => {
     return (
@@ -100,19 +80,19 @@ const About = () => {
                 <ProductDesc>
                     <h1>{HeadData.title}</h1>
                     <p>{HeadData.text}</p>
+                    <p>{HeadData.desc}</p>
                 </ProductDesc>
-                <Products>
-                    {ProductsData.map((item, index) => {
+                <ProductIconsInfo>
+                    {Icons.map((item, index) => {
                         return (
-                            <Product key={index}>
-                                <img src={item.image} alt={item.alt} />
-                                <h3>{item.name}</h3>
+                            <Info key={index} >
+                                <img src={item.image} alt=''/>
+                                <h1>{item.name}</h1>
                                 <p>{item.desc}</p>
-                            </Product>
+                            </Info>
                         );
                     })}
-                </Products>
-
+                </ProductIconsInfo>
             </ProductWrap>
         </ProductContainer>
     )

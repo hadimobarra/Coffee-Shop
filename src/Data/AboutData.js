@@ -1,39 +1,31 @@
-import Image1 from '../assets/images/img1.jpg';
-import Image2 from '../assets/images/img2.jpg';
-import Image3 from '../assets/images/img3.jpg';
-import Image4 from '../assets/images/img4.jpg';
+import IconOne from '../assets/icons/1.png';
+import IconTwo from '../assets/icons/2.png';
+import IconThree from '../assets/icons/3.png';
 
 
 export const HeadData = 
     {
-        title: 'درباره ما',
-        text: 'ما در کافی شاپ هادی روز های شنبه الی چهارشنبه از ساعت ده صبح الی بیست شب در خدمت شما عزیزان هستیم'
+        title: 'کافی شاپ هادی اولین و بهرین کافی شاپ انلاین در کشور',
+        text: 'ما در کافی شاپ هادی روز های شنبه الی چهارشنبه از ساعت ده صبح الی بیست شب در خدمت شما عزیزان هستیم',
+        desc: 'ما در متن های لورم به دنبال یکسری متن های از پیش نوشته شده برای پر کردن فضای خالی که باید با متن پر شوند هستیم'
     };
 
 
-export const ProductsData = [
+export const Icons = [
     {
-        name: 'قهوه',
-        image: Image1, 
-        alt: 'coffee',
-        desc: 'انواع قهوه های ترک و تلخ '
+        image: IconOne,
+        name: 'بهترین برند',
+        desc: 'دارای بهترین برند کافی شاپ انلاین'
+
     },
     {
-        name: 'کیک',
-        image: Image2, 
-        alt: 'cake',
-        desc: 'انواع کیک ها مانند کاپ کیک و کیک تولد'
+        image: IconTwo,
+        name: 'بهترین پرسنل',
+        desc: 'دارای مجرب ترین پرسنل کاری'
     },
     {
-        name: 'چایی',
-        image: Image3, 
-        alt: 'tea',
-        desc: 'انواع دمنوش های بهشتی و دمنوش های میکس'
+        image: IconThree,
+        name: ' سفارش انلاین',
+        desc: 'اولین سیستم انلاین سفارش در تهران'
     },
-    {
-        name: 'کوکی',
-        image: Image4, 
-        alt: 'cake',
-        desc: 'انواع کیک های خانگی مانند کوکی و غیره'
-    }
 ];

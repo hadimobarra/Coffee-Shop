@@ -16,6 +16,7 @@ const ProductWrapper = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
+  padding-top: 5rem;
 `;
 
 const ProductCard = styled.div`
@@ -40,11 +41,6 @@ const ProductImg = styled.div`
   }
 `;
 
-const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
-  text-align: center;
-  margin-bottom: 5rem;
-`;
 
 const ProductTitle = styled.h2`
   font-size: 1.5rem;
@@ -90,10 +86,10 @@ const ProductButton = styled.button`
 `;
 
 
-const Products = ({heading, data}) => {
+const Products = ({data}) => {
     return (
         <ProductsContainer>
-            <ProductsHeading>{heading}</ProductsHeading>
+            
             <ProductWrapper>
                 {data.map( (product, index) => {
                    return (
