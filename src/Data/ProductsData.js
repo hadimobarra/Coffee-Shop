@@ -1,36 +1,6 @@
-import img1 from '../assets/images/sweet.jpg';
-import img2 from '../assets/images/sweet-1.jpg';
-import img3 from '../assets/images/sweet-3.jpg';
 import pizza1 from '../assets/images/pizza1.jpg';
 import pizza2 from '../assets/images/pizza2.jpg';
 import pizza3 from '../assets/images/product-3.jpg';
-
-export const ProductsData = [
-    {
-        alt: 'ice cream', 
-        name: 'بستنی وانیلی',
-        image: img3, 
-        desc: 'متشکل از به لیمو, گل گاو زبان و برگ نعناع', 
-        price: '$10.60', 
-        button: ' افزودن' 
-    },
-    {
-        alt: 'ice cream', 
-        name: 'شیک توت فرنگی',
-        image: img1, 
-        desc: 'تهیه شده از پودر قهوه درجه یک و مرغوب',
-        price: '$16.99', 
-        button: 'افزودن' 
-    },
-    {
-        alt: 'ice cream', 
-        name: 'کیک بستنی', 
-        image: img2,
-        desc: 'مواد تشکیل دهنده عبارت است از: نعناع تازه, شکر, اب گاز دار و غیره', 
-        price: '$14.99', 
-        button: 'افزودن' 
-    },
-];
 
 
 export const ProductsDataTwo = [

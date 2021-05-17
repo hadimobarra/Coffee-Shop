@@ -1,0 +1,67 @@
+
+.body-section {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.body-slider {
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding-top: 0.8rem;
+    padding-bottom: 6rem;
+    height: 50vh;
+
+    &__img {
+        max-height: 100%;
+        width: 20rem;
+        height: 20rem;
+        max-width: 100%;
+        border-radius: 20px ;
+        margin: 0 auto;
+
+        &:hover {
+            transform: scale(0.9);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
+
+    &__name {
+        margin-top: 5px;
+        font-size: clamp(0.5rem, 3vw, 1.6rem);
+        font-weight: 400;
+
+        &:hover {
+            color: brown;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+
+    &__price {
+        margin-top: 5px;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+
+        &:hover {
+            color: brown;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+    }
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    color: brown;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    color: brown;
+
+    &:hover {
+        color: #000;
+    }
+}

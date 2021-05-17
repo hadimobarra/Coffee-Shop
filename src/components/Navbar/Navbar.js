@@ -30,7 +30,7 @@ const Links = styled(Link)``;
 
 const NavInfo = styled.div`
   display: flex;
-  transform: translate(23%, 0);
+  transform: translate(15%, 0);
 `;
 
 const Info = styled.div`

@@ -50,7 +50,7 @@ const NavMenu = styled.div`
 
 const NavItem = styled(Link)`
   font-size: 1rem;
-  margin-right: 15px;
+  margin-right: 2.5rem;
   color: gray;
   text-decoration: none;
 

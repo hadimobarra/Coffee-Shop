@@ -8,43 +8,28 @@ export const NavData =
 export const NavDataTwo = [
     {
         name: 'خانه',
-        path: '/home',
+        path: './home',
         sign: true
     },
     {
         name: 'درباره ما',
-        path: '/about',
-        sign: true
+        path: '/About',
+        sign: false
     },
     {
-        name: 'بلاگ',
+        name: 'منو',
         path: '/blog',
-        sign: true
+        sign: false
     },
     {
-        name: 'اجز',
+        name: 'قهوه روز',
         path: '/elements',
-        sign: true
+        sign: false
     },
     {
-        name: 'صفحات',
+        name: 'ثبت نام',
         path: '/pages',
-        sign: true
-    },
-    {
-        name: 'گالری',
-        path: '/gallery',
-        sign: true
-    },
-    {
-        name: 'تیم',
-        path: '/team',
-        sign: true
-    },
-    {
-        name: 'فروشگاه',
-        path: '/store',
-        sign: true
+        sign: false
     },
     {
         name: 'رزرو',
