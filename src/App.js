@@ -6,12 +6,10 @@ import NavbarTwo from './components/Navbar/NavbarTwo';
 import {SliderData} from './Data/SliderData';
 import  Slider from './components/Header/Slider';
 import About from './components/About/About';
-import Products from './components/Products/Products';
-import {ProductsDataTwo} from './Data/ProductsData';
 import Features from './components/Features/Features';
 import Footer from './components/Footer/Footer';
 import BodySlider from './components/BodySlider/BodySlider';
-
+import Form from './components/Form/Form';
 
 
 function App() {
@@ -24,7 +22,7 @@ function App() {
       <About />
       <BodySlider />
       <Features />
-      <Products data={ProductsDataTwo} />
+      <Form/>
       <Footer />
     </Router>
   );
